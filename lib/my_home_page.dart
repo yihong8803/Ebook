@@ -12,9 +12,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  late List popularBooks;
-  ReadData() {
-    DefaultAssetBundle.of(context).loadString("json/popularBooks").then((s) {
+  List popularBooks = [];
+  ReadData() async {
+    await DefaultAssetBundle.of(context)
+        .loadString("json/popularBooks.json")
+        .then((s) {
       setState(
         () {
           //Decode the loading
@@ -98,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           },
                         )),
                   )
-                ]))
+                ])),
           ],
         )),
       ),
