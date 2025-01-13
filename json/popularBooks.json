@@ -3,7 +3,7 @@
         "rating": "4.5",
         "title": "THE WATER CUBE",
         "text": "Martin Hyatt",   
-        "img": "img/pic1.png",
+        "img": "img/ban1.png",
         "audio": "Voices.mp3"
     },
 
@@ -11,28 +11,22 @@
         "rating": "4.5",
         "title": "THE WATER CUBE",
         "text": "Martin Hyatt",   
-        "img": "img/logo.png",
+        "img": "img/ban3.png",
         "audio": "Voices.mp3"
     },
     {
         "rating": "4.5",
         "title": "THE WATER CUBE",
         "text": "Martin Hyatt",   
-        "img": "img/pic3.png",
+        "img": "img/ban4.png",
         "audio": "Voices.mp3"
     },
+
     {
         "rating": "4.5",
         "title": "THE WATER CUBE",
         "text": "Martin Hyatt",   
-        "img": "img/pic4.png",
-        "audio": "Voices.mp3"
-    },
-    {
-        "rating": "4.5",
-        "title": "THE WATER CUBE",
-        "text": "Martin Hyatt",   
-        "img": "img/pic5.png",
+        "img": "img/ban5.png",
         "audio": "Voices.mp3"
     }
 ]

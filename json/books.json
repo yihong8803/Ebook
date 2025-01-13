@@ -1,0 +1,38 @@
+[
+    {
+        "rating": "5.0",
+        "title": "酷鸽",
+        "text": "Martin Hyatt",   
+        "img": "img/pic1.png",
+        "audio": "Voices.mp3"
+    },
+
+    {
+        "rating": "6.6",
+        "title": "Chicken Beautiful",
+        "text": "ikun",   
+        "img": "img/pic2.png",
+        "audio": "Voices.mp3"
+    },
+    {
+        "rating": "4.5",
+        "title": "不讲武德",
+        "text": "horse save country",   
+        "img": "img/pic3.png",
+        "audio": "Voices.mp3"
+    },
+    {
+        "rating": "10.0",
+        "title": "BLACK MAMBA",
+        "text": "Kobe Bryant",   
+        "img": "img/pic4.png",
+        "audio": "Voices.mp3"
+    },
+    {
+        "rating": "6.7",
+        "title": "What Are You Doing??",
+        "text": "ikun",   
+        "img": "img/pic5.png",
+        "audio": "Voices.mp3"
+    }
+]
