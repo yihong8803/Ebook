@@ -1,5 +1,7 @@
 import 'dart:convert';
+import 'dart:math';
 
+import 'package:ebook2/my_noti.dart';
 import 'package:ebook2/my_tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,26 +16,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
-    
-    List<Color> myColor = [
-    Colors.green,
-    Colors.red,
-    Colors.yellow,
-    Colors.blue
-  ];
-
-
-
-
-
   List popularBooks = [];
   List books = [];
   late ScrollController _scrollableController;
   late TabController _tabController;
-
-
-
-
 
   ReadData() async {
     await DefaultAssetBundle.of(context)
@@ -53,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage>
         () {
           //Decode the loading
           books = json.decode(s);
-          print("The book is $books");
+          //print("The book is $books");
         },
       );
     });
@@ -82,16 +68,19 @@ class _MyHomePageState extends State<MyHomePage>
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  GestureDetector(
-                    onTap: () {},
-                    child: ImageIcon(AssetImage("img/menu.png"),
-                        size: 24, color: Colors.black),
-                  ),
+                  ImageIcon(AssetImage("img/menu.png"),
+                      size: 24, color: Colors.black),
                   Row(
                     children: [
                       Icon(Icons.search),
                       SizedBox(width: 10),
-                      Icon(Icons.notifications),
+                      GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => Noti(),
+                            ));
+                          },
+                          child: Icon(Icons.notifications)),
                     ],
                   ),
                 ],
